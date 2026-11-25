@@ -1,0 +1,19 @@
+body {
+  background: var(--mantine-color-gray-0);
+}
+.clickable-row {
+  cursor: pointer;
+}
+.pipeline-column {
+  min-width: 220px;
+  flex: 1;
+}
+.pipeline-column.drop-target {
+  outline: 2px dashed var(--mantine-color-blue-5);
+  outline-offset: 2px;
+}
+.num {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
