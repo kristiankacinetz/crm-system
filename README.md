@@ -4,6 +4,10 @@ Interné CRM pre konateľa firmy: zákazníci a kontaktné osoby, faktúry a ich
 stavy, upozornenia na splatnosť, cenové ponuky s PDF, obchodná pipeline a
 zákazky.
 
+> Toto nie je prvá verzia. Je to najnovšia, obnovená verzia aplikácie, ktorú
+> vyvíjam od roku 2025. Pôvodný repozitár predchádzajúcej verzie už neexistuje,
+> preto história commitov v tomto repozitári začína touto verziou.
+
 Lokálna desktopová aplikácia (Tauri 2 + React + SQLite), primárne pre Windows,
 funguje aj na macOS a Linuxe. Dáta sú v jednom súbore v počítači, nič sa
 neposiela na internet.
