@@ -5,7 +5,7 @@ body {
   cursor: pointer;
 }
 .pipeline-column {
-  min-width: 260px;
+  min-width: 220px;
   flex: 1;
 }
 .pipeline-column.drop-target {

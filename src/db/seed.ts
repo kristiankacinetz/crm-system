@@ -14,6 +14,6 @@ export async function seed(db: Db) {
   await db.insert(users).values({ id: "local", name: "Konateľ" }).onConflictDoNothing();
   const count = await db.select({ n: sql<number>`count(*)` }).from(pipelineStages).get();
   if (!count || count.n === 0) {
-    await db.insert(pipelineStages).values(DEFAULT_STAGES.map((s) => ({ ...s })));
+    await db.insert(pipelineStages).values(DEFAULT_STAGES.map((s) => ({ ...s }))).onConflictDoNothing();
   }
 }

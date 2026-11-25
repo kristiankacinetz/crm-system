@@ -5,9 +5,15 @@ import { seed } from "./seed";
 export const DB_URL = "sqlite:crm.db";
 
 let sqlite: Database | null = null;
+let opening: Promise<Db> | null = null;
 
-/** Opens the app database (migrations run in Rust on load) and seeds defaults. */
-export async function initTauriDb(): Promise<Db> {
+/** Opens the app database once (migrations run in Rust on load) and seeds defaults. */
+export function initTauriDb(): Promise<Db> {
+  opening ??= open();
+  return opening;
+}
+
+async function open(): Promise<Db> {
   sqlite = await Database.load(DB_URL);
   await sqlite.execute("PRAGMA foreign_keys = ON");
   const db = createDb({

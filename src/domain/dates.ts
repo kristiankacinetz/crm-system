@@ -27,3 +27,8 @@ export function formatDate(iso: string | null | undefined): string {
   const [y, m, d] = iso.slice(0, 10).split("-");
   return `${Number(d)}. ${Number(m)}. ${y}`;
 }
+
+/** Slovak plural: 1 faktúra, 2–4 faktúry, 5+ faktúr. */
+export function plural(n: number, one: string, few: string, many: string): string {
+  return `${n} ${n === 1 ? one : n >= 2 && n <= 4 ? few : many}`;
+}

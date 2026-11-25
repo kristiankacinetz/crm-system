@@ -25,6 +25,11 @@ export function useAsync<T>(loader: () => Promise<T>, deps: unknown[] = []) {
 }
 
 export function errorMessage(e: unknown): string {
-  if (e instanceof Error) return e.message;
+  if (e instanceof Error) {
+    // Drizzle wraps driver errors; the cause holds the readable SQLite message.
+    const cause = (e as { cause?: unknown }).cause;
+    if (cause && e.message.startsWith("Failed query")) return errorMessage(cause);
+    return e.message;
+  }
   return String(e);
 }

@@ -8,6 +8,7 @@ import { listQuotes } from "../db/repo/quotes";
 import { listStages } from "../db/repo/stages";
 import { isOpen } from "../domain/invoiceStatus";
 import { formatMoney } from "../domain/money";
+import { plural } from "../domain/dates";
 import { useAsync } from "../ui/useAsync";
 import { InvoiceDetail } from "./InvoiceDetail";
 import { InvoiceTable } from "./InvoiceTable";
@@ -51,14 +52,14 @@ export default function Dashboard() {
     <Stack>
       <Title order={2}>Prehľad</Title>
       {overdue.length > 0 && (
-        <Alert color="red" icon={<IconAlertTriangle />} title={`${overdue.length} ${overdue.length === 1 ? "faktúra je" : "faktúry sú"} po splatnosti`}>
+        <Alert color="red" icon={<IconAlertTriangle />} title={`${plural(overdue.length, "faktúra je", "faktúry sú", "faktúr je")} po splatnosti`}>
           Spolu {formatMoney(sum(overdue))} neuhradené. Upozornenie vidíte len vy, zákazníkom sa nič neposiela.
         </Alert>
       )}
       <SimpleGrid cols={{ base: 2, md: 4 }}>
-        <Stat label="Po splatnosti" value={formatMoney(sum(overdue))} sub={`${overdue.length} faktúr`} color={overdue.length ? "red" : undefined} onClick={() => navigate("/invoices?f=overdue")} />
-        <Stat label="Neuhradené spolu" value={formatMoney(sum(open))} sub={`${open.length} faktúr`} onClick={() => navigate("/invoices?f=open")} />
-        <Stat label="Otvorené ponuky" value={formatMoney(pipeline.reduce((s, q) => s + q.totalNet, 0))} sub={`${pipeline.length} ponúk, bez DPH`} onClick={() => navigate("/pipeline")} />
+        <Stat label="Po splatnosti" value={formatMoney(sum(overdue))} sub={plural(overdue.length, "faktúra", "faktúry", "faktúr")} color={overdue.length ? "red" : undefined} onClick={() => navigate("/invoices?f=overdue")} />
+        <Stat label="Neuhradené spolu" value={formatMoney(sum(open))} sub={plural(open.length, "faktúra", "faktúry", "faktúr")} onClick={() => navigate("/invoices?f=open")} />
+        <Stat label="Otvorené ponuky" value={formatMoney(pipeline.reduce((s, q) => s + q.totalNet, 0))} sub={`${plural(pipeline.length, "ponuka", "ponuky", "ponúk")}, bez DPH`} onClick={() => navigate("/pipeline")} />
         <Stat label="Aktívne zákazky" value={String(activeOrders.length)} sub={formatMoney(activeOrders.reduce((s, o) => s + o.totalNet, 0)) + " bez DPH"} onClick={() => navigate("/orders")} />
       </SimpleGrid>
 
