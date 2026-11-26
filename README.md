@@ -1,5 +1,7 @@
 # CRM
 
+[English version](README.en.md) · Autor: Kristián Kačinetz
+
 Interné CRM pre konateľa firmy: zákazníci a kontaktné osoby, faktúry a ich
 stavy, upozornenia na splatnosť, cenové ponuky s PDF, obchodná pipeline a
 zákazky.
@@ -57,7 +59,12 @@ Zmena schémy databázy: upravte `src/db/schema.ts`, spustite
 | `src/pdf` | PDF cenovej ponuky |
 | `src/pages`, `src/ui` | obrazovky a spoločné komponenty |
 | `src-tauri` | desktopový obal, migrácie |
-| `docs` | [dátový model](docs/datovy-model.md) a [plán](docs/plan.md) |
+| `docs` | [dokumentácia SK a EN](docs/README.md): príručky, technická dokumentácia, [dátový model](docs/sk/datovy-model.md), licencia, marketing |
+| `scripts/docs` | generovanie dokumentácie do PDF a DOCX |
 
 Dáta sú v súbore `crm.db` v dátovom priečinku aplikácie
 (Windows: `%APPDATA%\sk.crm.desktop`).
+
+## Licencia
+
+© 2026 Kristián Kačinetz. Všetky práva vyhradené. Podmienky v súbore [LICENSE](LICENSE).

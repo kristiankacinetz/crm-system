@@ -1,4 +1,14 @@
-# Plán MVP
+---
+title: "CRM – Plán MVP"
+author: "Kristián Kačinetz"
+version: "0.1.0"
+date: "2026-11-26"
+lang: sk
+---
+
+# CRM – Plán MVP
+
+Autor: Kristián Kačinetz · verzia 0.1.0
 
 | Krok | Obsah |
 |---|---|
@@ -13,3 +23,7 @@
 
 Mimo MVP: API iDokladu (len pri vyššom pláne), synchronizácia medzi
 zariadeniami (Turso), viac používateľov, napojenie na banku.
+
+---
+
+© 2026 Kristián Kačinetz. Všetky práva vyhradené.
