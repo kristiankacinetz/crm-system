@@ -2,6 +2,10 @@
   "name": "crm",
   "private": true,
   "version": "0.1.0",
+  "description": "Interné CRM pre konateľa firmy: zákazníci, faktúry, ponuky, pipeline a zákazky",
+  "author": "Kristián Kačinetz",
+  "license": "SEE LICENSE IN LICENSE",
+  "copyright": "© 2026 Kristián Kačinetz",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -7,6 +7,9 @@ import { formatDate } from "../domain/dates";
 import { formatMoney } from "../domain/money";
 import { computeTotals, lineNet } from "../domain/quoteTotals";
 
+/** Shown as the PDF "Creator"/"Producer"; the document author stays the issuing company. */
+export const APP_CREATOR = "CRM, autor Kristián Kačinetz";
+
 // Roboto from pdfmake covers Slovak diacritics.
 (pdfMake as unknown as { addVirtualFileSystem: (v: unknown) => void }).addVirtualFileSystem(pdfFonts);
 
@@ -148,7 +151,7 @@ export function quoteDocDefinition({ quote, items, customer, contact, settings }
   return {
     pageSize: "A4",
     pageMargins: [40, 40, 40, 70],
-    info: { title: `Cenová ponuka ${quote.number}`, author: c.name },
+    info: { title: `Cenová ponuka ${quote.number}`, author: c.name, creator: APP_CREATOR, producer: APP_CREATOR },
     defaultStyle: { font: "Roboto", fontSize: 9, lineHeight: 1.2 },
     styles: {
       brand: { fontSize: 16, bold: true },

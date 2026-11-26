@@ -26,7 +26,18 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["msi", "nsis", "dmg", "appimage", "deb"],
+    "publisher": "Kristián Kačinetz",
+    "copyright": "© 2026 Kristián Kačinetz. Všetky práva vyhradené.",
+    "category": "Business",
+    "shortDescription": "Interné CRM pre konateľa firmy",
+    "longDescription": "Lokálna desktopová aplikácia na evidenciu zákazníkov, faktúr a ich stavov, cenových ponúk s PDF, obchodnej pipeline a zákaziek. Autor: Kristián Kačinetz.",
+    "targets": [
+      "msi",
+      "nsis",
+      "dmg",
+      "appimage",
+      "deb"
+    ],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -35,11 +46,22 @@
       "icons/icon.ico"
     ],
     "windows": {
-      "nsis": { "languages": ["Slovak", "English"] },
-      "wix": { "language": "sk-SK" }
+      "nsis": {
+        "languages": [
+          "Slovak",
+          "English"
+        ]
+      },
+      "wix": {
+        "language": "sk-SK"
+      }
     }
   },
   "plugins": {
-    "sql": { "preload": ["sqlite:crm.db"] }
+    "sql": {
+      "preload": [
+        "sqlite:crm.db"
+      ]
+    }
   }
 }

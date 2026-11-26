@@ -1,5 +1,6 @@
 import { ActionIcon, Alert, Button, Card, ColorSwatch, Grid, Group, Image, NumberInput, Select, Stack, Table, Text, TextInput, Textarea, Title } from "@mantine/core";
 import { IconArrowDown, IconArrowUp, IconDatabaseExport, IconFolder, IconPlus, IconTrash, IconUpload } from "@tabler/icons-react";
+import { getVersion } from "@tauri-apps/api/app";
 import { useEffect, useState } from "react";
 import { getSettings, saveSettings, type AppSettings, type CompanyInfo } from "../db/repo/settings";
 import { deleteStage, listStages, reorderStages, saveStage } from "../db/repo/stages";
@@ -24,9 +25,11 @@ function toDataUrl(bytes: Uint8Array, fileName: string): string {
 export default function Settings() {
   const [s, setS] = useState<AppSettings | null>(null);
   const [stages, setStages] = useState<PipelineStage[]>([]);
+  const [version, setVersion] = useState("");
   const loadStages = () => listStages().then(setStages);
   useEffect(() => {
     void getSettings().then(setS);
+    void getVersion().then(setVersion).catch(() => undefined);
     void loadStages();
   }, []);
   if (!s) return null;
@@ -226,6 +229,17 @@ export default function Settings() {
             Posledná záloha: {new Date(s.lastBackupAt).toLocaleString("sk-SK")}
           </Text>
         )}
+      </Card>
+
+      <Card withBorder>
+        <Title order={4} mb="sm">
+          O aplikácii
+        </Title>
+        <Text size="sm">CRM{version && ` verzia ${version}`}</Text>
+        <Text size="sm">Autor: Kristián Kačinetz</Text>
+        <Text size="sm" c="dimmed">
+          © 2026 Kristián Kačinetz. Všetky práva vyhradené. Používanie sa riadi licenčnou zmluvou dodanou s aplikáciou.
+        </Text>
       </Card>
     </Stack>
   );
