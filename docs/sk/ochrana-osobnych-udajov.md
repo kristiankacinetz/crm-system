@@ -60,7 +60,7 @@ osobných údajov (vzor: **[doplniť]**) alebo pošlite anonymizovanú kópiu.
 
 ## 6. Kontakt
 
-Autor aplikácie: Kristián Kačinetz, **[e-mail]**.
+Autor aplikácie: Kristián Kačinetz, **kristian.kacinetz@gmail.com**.
 
 ---
 

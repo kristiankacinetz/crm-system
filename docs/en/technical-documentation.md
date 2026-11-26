@@ -12,7 +12,7 @@ lang: en
 |---|---|
 | Product | CRM, desktop application |
 | Version | 0.1.0 |
-| Author | Kristián Kačinetz |
+| Author | Kristián Kačinetz, kristian.kacinetz@gmail.com |
 | Date | 26 November 2026 |
 
 ## 1. Architecture overview
@@ -127,8 +127,8 @@ Build output: `src-tauri/target/release/bundle/` (`msi`, `nsis`, `dmg`,
 
 | Location | Value |
 |---|---|
-| `package.json` → `author` | Kristián Kačinetz |
-| `src-tauri/Cargo.toml` → `authors` | Kristián Kačinetz |
+| `package.json` → `author` | Kristián Kačinetz <kristian.kacinetz@gmail.com> |
+| `src-tauri/Cargo.toml` → `authors` | Kristián Kačinetz <kristian.kacinetz@gmail.com> |
 | `tauri.conf.json` → `bundle.publisher` | Kristián Kačinetz (manufacturer in the MSI/NSIS installer and in the .exe properties) |
 | `tauri.conf.json` → `bundle.copyright` | © 2026 Kristián Kačinetz |
 | Quote PDFs | author = the user's company, Creator/Producer = "CRM, autor Kristián Kačinetz" |

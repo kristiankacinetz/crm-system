@@ -12,7 +12,7 @@ lang: en
 |---|---|
 | Product | CRM, desktop application |
 | Version | 0.1.0 |
-| Author | Kristián Kačinetz |
+| Author | Kristián Kačinetz, kristian.kacinetz@gmail.com |
 | Date | 26 November 2026 |
 
 ## 1. System requirements

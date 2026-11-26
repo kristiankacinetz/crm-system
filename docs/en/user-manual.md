@@ -12,7 +12,7 @@ lang: en
 |---|---|
 | Product | CRM, desktop application |
 | Version | 0.1.0 |
-| Author | Kristián Kačinetz |
+| Author | Kristián Kačinetz, kristian.kacinetz@gmail.com |
 | Date | 26 November 2026 |
 
 > The application's user interface is in Slovak. Screen and button names are
@@ -223,7 +223,7 @@ user. Data can be moved using a backup.
 
 ## 14. Support
 
-Support contact: **[add e-mail / phone]**.
+Support contact: **kristian.kacinetz@gmail.com**, phone: **[add phone]**.
 The scope of support is defined by the licence agreement or support agreement.
 
 ---

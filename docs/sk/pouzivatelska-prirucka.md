@@ -12,7 +12,7 @@ lang: sk
 |---|---|
 | Produkt | CRM, desktopová aplikácia |
 | Verzia | 0.1.0 |
-| Autor | Kristián Kačinetz |
+| Autor | Kristián Kačinetz, kristian.kacinetz@gmail.com |
 | Dátum | 26. 11. 2026 |
 
 ## 1. Úvod
@@ -214,7 +214,7 @@ počítač a jedného používateľa. Údaje môžete preniesť zálohou.
 
 ## 14. Podpora
 
-Kontakt na podporu: **[doplniť e-mail / telefón]**.
+Kontakt na podporu: **kristian.kacinetz@gmail.com**, telefón: **[doplniť]**.
 Rozsah podpory určuje licenčná zmluva alebo zmluva o podpore.
 
 ---

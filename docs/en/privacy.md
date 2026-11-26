@@ -59,7 +59,7 @@ becomes a processor. In that case conclude a data processing agreement
 
 ## 6. Contact
 
-Application author: Kristián Kačinetz, **[e-mail]**.
+Application author: Kristián Kačinetz, **kristian.kacinetz@gmail.com**.
 
 ---
 

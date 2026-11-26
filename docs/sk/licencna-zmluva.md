@@ -20,7 +20,7 @@ neskorších predpisov
 **Poskytovateľ licencie (autor):**\
 Kristián Kačinetz, fyzická osoba\
 [adresa trvalého pobytu / miesto podnikania]\
-[IČO, ak bude pridelené] · [e-mail]\
+[IČO, ak bude pridelené] · kristian.kacinetz@gmail.com\
 (ďalej „Poskytovateľ“)
 
 **Nadobúdateľ licencie:**\
@@ -78,7 +78,7 @@ nastavenie je na Nadobúdateľovi.
 5.1 Podpora a aktualizácie sa poskytujú v rozsahu **[žiadnom / podľa
 samostatnej zmluvy o podpore / počas 12 mesiacov od kúpy]**.
 
-5.2 Kontakt na podporu: **[e-mail]**, reakčná doba **[2 pracovné dni]**.
+5.2 Kontakt na podporu: **kristian.kacinetz@gmail.com**, reakčná doba **[2 pracovné dni]**.
 
 ## 6. Záruka a zodpovednosť
 

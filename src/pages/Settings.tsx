@@ -236,7 +236,7 @@ export default function Settings() {
           O aplikácii
         </Title>
         <Text size="sm">CRM{version && ` verzia ${version}`}</Text>
-        <Text size="sm">Autor: Kristián Kačinetz</Text>
+        <Text size="sm">Autor: Kristián Kačinetz (kristian.kacinetz@gmail.com)</Text>
         <Text size="sm" c="dimmed">
           © 2026 Kristián Kačinetz. Všetky práva vyhradené. Používanie sa riadi licenčnou zmluvou dodanou s aplikáciou.
         </Text>

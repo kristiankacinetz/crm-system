@@ -27,6 +27,7 @@ import onepager  # noqa: E402
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 AUTHOR = "Kristián Kačinetz"
+AUTHOR_EMAIL = "kristian.kacinetz@gmail.com"
 COPYRIGHT = f"© 2026 {AUTHOR}. Všetky práva vyhradené. All rights reserved."
 VERSION = "0.1.0"
 
@@ -115,7 +116,7 @@ def stamp_pdf(path: Path, title: str, lang: str):
     writer._info = None  # drop the info dictionary written by the renderer
     writer.add_metadata({
         "/Title": title, "/Author": AUTHOR, "/Creator": AUTHOR, "/Producer": AUTHOR,
-        "/Subject": f"CRM {VERSION}", "/Keywords": "CRM", "/Copyright": COPYRIGHT,
+        "/Subject": f"CRM {VERSION} · {AUTHOR_EMAIL}", "/Keywords": "CRM", "/Copyright": COPYRIGHT,
     })
     stream = DecodedStreamObject()
     stream.set_data(xmp(title, lang))
@@ -132,7 +133,7 @@ def stamp_docx(path: Path, title: str, lang: str):
     cp.title = title
     cp.subject = f"CRM {VERSION}"
     cp.keywords = "CRM"
-    cp.comments = COPYRIGHT
+    cp.comments = f"{COPYRIGHT} Kontakt / contact: {AUTHOR_EMAIL}"
     cp.category = "Dokumentácia" if lang == "sk" else "Documentation"
     cp.language = "sk-SK" if lang == "sk" else "en-GB"
     cp.created = cp.modified = datetime.now(timezone.utc).replace(tzinfo=None)
@@ -192,7 +193,7 @@ def main():
     shutil.copy(ROOT / "LICENSE", pkg / "LICENSE.txt")
     (pkg / "README.txt").write_text(
         "CRM – dokumentácia / documentation\r\n"
-        f"Autor / Author: {AUTHOR}\r\nVerzia / Version: {VERSION}\r\n\r\n"
+        f"Autor / Author: {AUTHOR} ({AUTHOR_EMAIL})\r\nVerzia / Version: {VERSION}\r\n\r\n"
         "SK – Slovensky\\   dokumenty v slovenčine (PDF na čítanie, DOCX na úpravy)\r\n"
         "EN – English\\     documents in English (PDF to read, DOCX to edit)\r\n\r\n"
         "  01 Používateľ / User                     príručka, inštalácia / manual, installation\r\n"

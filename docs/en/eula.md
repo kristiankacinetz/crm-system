@@ -19,7 +19,7 @@ Copyright Act, as amended
 **Licensor (author):**\
 Kristián Kačinetz, natural person\
 [permanent address / place of business]\
-[company ID, if assigned] · [e-mail]\
+[company ID, if assigned] · kristian.kacinetz@gmail.com\
 (the "Licensor")
 
 **Licensee:**\
@@ -76,7 +76,7 @@ backup function, which the Licensee is responsible for configuring.
 5.1 Support and updates are provided **[not at all / under a separate support
 agreement / for 12 months from purchase]**.
 
-5.2 Support contact: **[e-mail]**, response time **[2 business days]**.
+5.2 Support contact: **kristian.kacinetz@gmail.com**, response time **[2 business days]**.
 
 ## 6. Warranty and liability
 

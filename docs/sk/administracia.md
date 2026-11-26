@@ -12,7 +12,7 @@ lang: sk
 |---|---|
 | Produkt | CRM, desktopová aplikácia |
 | Verzia | 0.1.0 |
-| Autor | Kristián Kačinetz |
+| Autor | Kristián Kačinetz, kristian.kacinetz@gmail.com |
 | Dátum | 26. 11. 2026 |
 
 Príručka je pre osobu, ktorá aplikáciu inštaluje, zálohuje a stará sa o dáta.

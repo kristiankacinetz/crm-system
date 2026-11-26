@@ -19,7 +19,7 @@ The author's internal checklist. Not intended for customers.
 | 3 | **Data processing agreement** (template) for support | If customers will send you their database. |
 | 4 | **Price list and licensing model** (one-off, yearly, per computer) | Add to the EULA, one-pager and quotes. |
 | 5 | **Support terms** (SLA): channel, response time, price, what is and is not included | Add to EULA point 5. |
-| 6 | **Contact details** (e-mail, phone, website, address) | All documents contain square-bracket placeholders. |
+| 6 | **Contact details** (phone, website, address; e-mail is filled in) | All documents contain square-bracket placeholders. |
 | 7 | **VAT**: monitor turnover (registration above the threshold) | Tax obligation. |
 | 8 | **Trademark / product name** | "CRM" is a generic name. Choose a distinctive name before marketing and check it (Slovak IP Office, EUIPO). |
 | 9 | **Open-source licences** | Ship a THIRD-PARTY-NOTICES list with the installer. All libraries used have permissive licences (MIT, Apache-2.0 etc.) but require attribution. |
@@ -40,7 +40,7 @@ The author's internal checklist. Not intended for customers.
 
 ## Details missing from the documents
 
-- the author's address, company ID (if any), e-mail and phone,
+- the author's address, company ID (if any) and phone (e-mail is filled in),
 - price and licensing model,
 - support terms,
 - SHA-256 checksum of the installer (each release),

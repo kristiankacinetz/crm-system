@@ -2,7 +2,7 @@
 name = "crm"
 version = "0.1.0"
 description = "Interné CRM pre konateľa firmy"
-authors = ["Kristián Kačinetz"]
+authors = ["Kristián Kačinetz <kristian.kacinetz@gmail.com>"]
 license-file = "../LICENSE"
 publish = false
 edition = "2021"

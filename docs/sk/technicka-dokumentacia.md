@@ -12,7 +12,7 @@ lang: sk
 |---|---|
 | Produkt | CRM, desktopová aplikácia |
 | Verzia | 0.1.0 |
-| Autor | Kristián Kačinetz |
+| Autor | Kristián Kačinetz, kristian.kacinetz@gmail.com |
 | Dátum | 26. 11. 2026 |
 
 ## 1. Prehľad architektúry
@@ -124,8 +124,8 @@ Výstupy buildu: `src-tauri/target/release/bundle/` (`msi`, `nsis`, `dmg`,
 
 | Miesto | Hodnota |
 |---|---|
-| `package.json` → `author` | Kristián Kačinetz |
-| `src-tauri/Cargo.toml` → `authors` | Kristián Kačinetz |
+| `package.json` → `author` | Kristián Kačinetz <kristian.kacinetz@gmail.com> |
+| `src-tauri/Cargo.toml` → `authors` | Kristián Kačinetz <kristian.kacinetz@gmail.com> |
 | `tauri.conf.json` → `bundle.publisher` | Kristián Kačinetz (výrobca v inštalátore MSI/NSIS a vo vlastnostiach .exe) |
 | `tauri.conf.json` → `bundle.copyright` | © 2026 Kristián Kačinetz |
 | PDF ponuky | autor = firma používateľa, tvorca (Creator/Producer) = „CRM, autor Kristián Kačinetz“ |

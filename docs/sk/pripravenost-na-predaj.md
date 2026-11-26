@@ -19,7 +19,7 @@ Interný kontrolný zoznam autora. Nie je určený zákazníkovi.
 | 3 | **Zmluva o spracúvaní osobných údajov** (vzor) pre podporu | Ak budete od zákazníkov dostávať databázu. |
 | 4 | **Cenník a licenčný model** (jednorazová licencia, ročná licencia, cena za počítač) | Doplniť do EULA, one-pagera a ponuky. |
 | 5 | **Podmienky podpory** (SLA): kanál, reakčná doba, cena, čo je a nie je v cene | Doplniť do EULA bod 5. |
-| 6 | **Kontaktné údaje** (e-mail, telefón, web, adresa) | Vo všetkých dokumentoch sú hranaté zátvorky. |
+| 6 | **Kontaktné údaje** (telefón, web, adresa; e-mail je doplnený) | Vo všetkých dokumentoch sú hranaté zátvorky. |
 | 7 | **DPH**: sledovať obrat (registrácia nad limit) | Daňová povinnosť. |
 | 8 | **Ochranná známka / názov produktu** | „CRM“ je všeobecný názov. Pred marketingom zvoliť vlastný názov a overiť ho (ÚPV SR, EUIPO). |
 | 9 | **Licencie open-source knižníc** | Pripojiť zoznam (THIRD-PARTY-NOTICES) k inštalátoru. Všetky použité knižnice majú voľné licencie (MIT, Apache-2.0 a pod.), vyžadujú však uvedenie. |
@@ -40,7 +40,7 @@ Interný kontrolný zoznam autora. Nie je určený zákazníkovi.
 
 ## Údaje, ktoré chýbajú v dokumentoch
 
-- adresa, IČO (ak bude), e-mail a telefón autora,
+- adresa, IČO (ak bude) a telefón autora (e-mail je doplnený),
 - cena a licenčný model,
 - podmienky podpory,
 - kontrolný súčet SHA-256 inštalátora (pri každom vydaní),
