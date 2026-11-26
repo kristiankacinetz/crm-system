@@ -1,4 +1,14 @@
-# Dátový model
+---
+title: "CRM – Dátový model"
+author: "Kristián Kačinetz"
+version: "0.1.0"
+date: "2026-11-26"
+lang: sk
+---
+
+# CRM – Dátový model
+
+Autor: Kristián Kačinetz · verzia 0.1.0
 
 Lokálna databáza je jeden súbor SQLite (`crm.db` v dátovom priečinku aplikácie).
 Schéma je napísaná v Drizzle ORM (`src/db/schema.ts`) a SQL migráciách
@@ -232,3 +242,7 @@ priečinku.
 - Všetok prístup k dátam ide cez `src/db/repo/*`, UI nepíše SQL.
 - UUID, `updated_at`, `deleted_at` a autor zmeny umožňujú synchronizáciu.
 - Najjednoduchšia cesta pre viac zariadení: Turso (libSQL) embedded replica.
+
+---
+
+© 2026 Kristián Kačinetz. Všetky práva vyhradené.

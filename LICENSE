@@ -1,0 +1,21 @@
+CRM
+Copyright (c) 2026 Kristián Kačinetz. Všetky práva vyhradené. All rights reserved.
+
+SLOVENSKY
+
+Tento softvér a jeho dokumentácia sú autorským dielom Kristiána Kačinetza
+(fyzická osoba) chráneným zákonom č. 185/2015 Z. z. Autorský zákon.
+Bez písomnej licenčnej zmluvy s autorom nie je dovolené softvér používať,
+rozmnožovať, upravovať, šíriť ani sprístupňovať verejnosti.
+Podmienky použitia upravuje licenčná zmluva (EULA): docs/sk/licencna-zmluva.md.
+
+ENGLISH
+
+This software and its documentation are a copyrighted work of Kristián
+Kačinetz (natural person), protected by Slovak Act No. 185/2015 Coll.
+(Copyright Act). Without a written licence agreement with the author you may
+not use, copy, modify, distribute or make the software available to the public.
+Terms of use are set out in the licence agreement (EULA): docs/en/eula.md.
+
+Third-party open-source components included in the application remain under
+their own licences.
